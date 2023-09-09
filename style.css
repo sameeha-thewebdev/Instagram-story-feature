@@ -22,13 +22,15 @@ body {
   width: 320px;
   height: 480px;
   border-radius: 20px;
+  position: relative;
+  overflow: hidden;
 }
 
 #stories {
   height: 110px;
   width: 100%;
-  border-bottom: 1px solid #99a98f;
-  padding: 16px;
+  border-bottom: 2px solid #99a98f;
+  padding: 16px 5px;
   white-space: nowrap;
   overflow-x: auto;
   overflow-y: hidden;
@@ -39,10 +41,10 @@ body {
 }
 
 .story {
+  margin-right: 5px;
   width: 80px;
   height: 80px;
   border-radius: 50%;
-  border: 2px solid #99a98f;
   display: inline-block;
   overflow: hidden;
 }
@@ -51,4 +53,13 @@ img {
   width: 100%;
   height: 100%;
   object-fit: cover;
+}
+
+.full-screen-story {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background-size: cover;
+  background-position: center;
+  display: none;
 }
